@@ -1,0 +1,35 @@
+<div class="content-body">
+    <div class="add-medicine">
+        <p>Add Medicine</p>
+        <hr>
+        <div class="ui-fluid p-formgrid p-grid">
+            <div class="p-field p-col-12 p-md-6">
+                <label for="medicinename">Medicine Name</label>
+                <input id="medicinename" [(ngModel)]="medicine.name" type="text" pInputText> 
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="lastname6">Brand</label>
+                <input id="lastname6" [(ngModel)]="medicine.brand" type="text" pInputText> 
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="city">Price</label>
+                <input id="city" [(ngModel)]="medicine.price" type="text" pInputText> 
+            </div>
+            <div class="p-field p-col-12 p-md-3">
+                <label for="expiryDate">Expiry Date</label>
+                <p-calendar id="expiryDate" [(ngModel)]="medicine.expiryDate"></p-calendar>
+            </div>
+            <div class="p-field p-col-12 p-md-3">
+                <label for="quantity">Quantity</label>
+                <input id="quantity" [(ngModel)]="medicine.quantity" type="text" pInputText> 
+            </div>
+            <div class="p-field p-col-12">
+                <label for="notes">Notes</label>
+                <textarea id="notes" [(ngModel)]="medicine.notes" type="text" rows="4" pInputTextarea></textarea>
+            </div>
+            <div class="p-field p-col-12 p-md-3">
+                <button pButton type="button" label="Save" (click)="addMedicine()"></button>
+            </div>
+        </div>
+    </div>
+</div>
